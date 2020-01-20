@@ -1,0 +1,143 @@
+/*---------------------------
+    User info area
+----------------------------*/
+
+.clients-info-area {
+    padding: 120px 0;
+}
+
+.testimonial-area {
+    padding: 73px 60px 80px 60px;
+    border: 2px solid rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    text-align: center;
+    .title {
+        font-size: 40px;
+        line-height: 50px;
+        color: #151525;
+    }
+    .testimonial-carousel {
+        padding-top: 40px;
+        .single-testimonial-item {
+            margin-bottom: 20px;
+            .description {
+                background-color: #f7faff;
+                position: relative;
+                padding: 35px 40px 22px 40px;
+                color: #4e4e62;
+                &:after {
+                    position: absolute;
+                    left: 110px;
+                    bottom: -13px;
+                    width: 30px;
+                    height: 30px;
+                    background-color: #f7faff;
+                    @include transform(rotate(45deg));
+                    content: '';
+                }
+                p {
+                    color: #4e4e62;
+                }
+            }
+            .autor-details {
+                margin-top: 30px;
+                position: relative;
+                display: inline-block;
+                .thumb {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                    }
+                }
+                .content {
+                    padding-left: 80px;
+                    padding-top: 10px;
+                    .name {
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 18px;
+                        color: #151525;
+                    }
+                    .post {
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 12px;
+                        color: $base-color;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.faq-area {
+    border: 2px solid rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    padding: 73px 40px 80px 40px;
+    text-align: center;
+    .title {
+        font-size: 40px;
+        line-height: 50px;
+        color: #151525;
+        margin-bottom: 50px;
+    }
+    .faq-area-inner {
+        padding: 0 20px 0 20px;
+        .card {
+            border: 2px solid rgba(0, 0, 0, 0.10);
+            border-bottom: none;
+            border-radius: 0;
+            text-align: left;
+            &:first-child {
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+            }
+            &:last-child {
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius: 6px;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.10);
+            }
+            .card-header {
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                a {
+                    display: block;
+                    line-height: 20px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    font-family: $heading-font;
+                    padding: 25px 30px;
+                    cursor: pointer;
+                    color: #4e4e62;
+                    position: relative;
+                    &:after {
+                        position: absolute;
+                        right: 30px;
+                        top: 50%;
+                        @include transform(translateY(-50%));
+                        @include fontawesomeIcon("\f067");
+                        font-size: 14px;
+                        color: #4e4e62;
+                    }
+                    &[aria-expanded="true"] {
+                        &:after {
+                            content: "\f068";
+                        }
+                    }
+                }
+            }
+            .card-body {
+                padding-top: 2px;
+                padding-bottom: 28px;
+                padding-left: 30px;
+                color: #4e4e62;
+            }
+        }
+    }
+}

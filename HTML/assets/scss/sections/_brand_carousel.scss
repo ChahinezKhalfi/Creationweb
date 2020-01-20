@@ -1,0 +1,26 @@
+/*---------------------
+    Brand Carousel
+-----------------------*/
+
+.brand-carousel-area {
+    padding: 100px 0 100px 0;
+    &.team-page {
+        background-color: #f7faff;
+    }
+    .brand-carousel-inner {
+        .single-carousel-item {
+            border: 1px solid rgba(0,0,0,0.07);
+            padding: 20px;
+            cursor: pointer;
+            img {
+                filter: grayscale(100%);
+                @include transition($transition);
+            }
+            &:hover {
+                img {
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
+}

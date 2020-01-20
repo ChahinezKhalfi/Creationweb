@@ -1,0 +1,44 @@
+/*----------------------
+    Contact Page
+----------------------*/
+
+.contact-page-content-area {
+    padding: 132px 0 220px 0;
+    .single-contact-info-box {
+        position: relative;
+        text-align: center;
+        border: 2px solid rgba(0, 0, 0, 0.10);
+        border-radius: 5px;
+        padding: 60px 30px 35px 30px;
+        @include transition($transition);
+        &:hover {
+            border-color: $base-color;
+            .icon {
+                box-shadow: 0 3px 16px 0 rgba(0, 84, 255, 10);
+            }
+        }
+        .icon {
+            position: absolute;
+            left: 50%;
+            top: -35px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            font-size: 18px;
+            line-height: 70px;
+            text-align: center;
+            background-color: $base-color;
+            color: $white;
+            @include transform(translateX(-50%));
+            @include transition($transition);
+        }
+        .content {
+            .details {
+                display: block;
+                font-size: 18px;
+                line-height: 28px;
+                color: #484862;
+            }
+        }
+    }
+}

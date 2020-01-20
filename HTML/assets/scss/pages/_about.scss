@@ -1,0 +1,66 @@
+/*---------------------
+    About Page
+----------------------*/
+
+.about-page-content {
+    padding: 120px 0;
+    .right-content-area {
+        padding-top: 20px;
+        padding-left: 20px;
+        .title {
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 50px;
+            color: #151525;
+        }
+        .subtitle {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $base-color;
+            display: block;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            color: #4e4e62;
+        }
+        .right-content-bottom {
+            position: relative;
+            margin-top: 38px;
+            .video-thumb {
+                display: inline-block;
+                position: absolute;
+                .video-thumb-inner {
+                    position: relative;
+                    .hover {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 84, 255, 0.90);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        i {
+                            font-size: 60px;
+                            line-height: 60px;
+                            color: $white;
+                            &:before {
+                                font-size: 60px;
+                                line-height: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+            .content {
+                padding-left: 230px;
+                font-style: italic;
+            }
+        }
+    }
+}

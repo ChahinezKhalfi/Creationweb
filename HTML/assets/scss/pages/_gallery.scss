@@ -1,0 +1,55 @@
+/*-------------------------
+    Gallery Page
+-------------------------*/
+
+.photo-gallery-contenta-area {
+    padding: 120px 0 90px 0;
+    .photo-gallery-masony-wrapper {
+        .photo-gallery-masony-inner {
+            .single-photo-gallery-item {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .photo-gallery-manu-wrppaer {
+        margin-bottom: 40px;
+        text-align: center;
+        ul {
+            border: 2px solid rgba(75, 75, 75, .19);
+            border-radius: 35px;
+            display: inline-block;
+            li {
+                display: inline-block;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                padding: 0 26px;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 700;
+                color: #a6a6a6;
+                border-radius: 35px;
+                cursor: pointer;
+                @include transition($transition);
+                &.active {
+                    background-color: $base-color;
+                    color: $white;
+                }
+                &:hover {
+                    background-color: $base-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

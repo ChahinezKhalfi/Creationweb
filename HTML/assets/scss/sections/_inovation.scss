@@ -1,0 +1,68 @@
+/*------------------------
+    Inovation area
+------------------------*/
+
+.single-inovation-area {
+    padding: 92px 0 100px 0;
+    position: relative;
+    &.about-page{
+        padding-top: 62px;
+        .bg-text{
+            top: 65px;
+        }
+    }
+    &.bg-color {
+        background-color: #f7faff;
+    }
+    &.second-item {
+        .bg-text {
+            left: 16%;
+        }
+    }
+    &.last-child {
+        padding-bottom: 220px;
+    }
+    .bg-text {
+        position: absolute;
+        top: 40px;
+        left: 30%;
+        font-size: 150px;
+        line-height: 150px;
+        color: rgba(21, 21, 37, 0.06);
+        font-weight: 700;
+        font-family: $heading-font;
+    }
+    .img-wrapper {
+        padding-top: 10px;
+        .inovation-area-img {
+            max-width: 466px;
+            max-height: 466px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .invovation-content-area {
+        .title {
+            font-size: 53px;
+            line-height: 64px;
+            margin-bottom: 32px;
+        }
+        .subtitle {
+            font-size: 30px;
+            line-height: 40px;
+            color: #151525;
+            display: block;
+            margin-bottom: 5px;
+        }
+        p {
+            color: #4e4e62;
+            line-height: 24px;
+            font-size: 14px;
+            padding-right: 55px;
+        }
+        .btn-wrapper {
+            margin-top: 35px;
+        }
+    }
+}

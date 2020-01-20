@@ -1,0 +1,54 @@
+/*-----------------------------------
+    Pricing Plan Page
+-----------------------------------*/
+
+.pricing-plan-page-content {
+    padding: 120px 0;
+    .sinlge-pricing-plan-page-plan {
+        border: 2px solid rgba(0, 0, 0, 0.10);
+        padding: 55px 50px 60px 50px;
+        border-radius: 5px;
+        .header {
+            .price {
+                font-size: 14px;
+                line-height: 24px;
+                color: $base-color;
+                display: block;
+                margin-bottom: 5px;
+            }
+            .name {
+                font-size: 40px;
+                line-height: 50px;
+                font-weight: 700;
+                margin-bottom: 32px;
+            }
+        }
+        .body {
+            ul {
+                li {
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: #4e4e62;
+                    i {
+                        color: $base-color;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+        .footer {
+            margin-top: 42px;
+            .boxed-btn {
+                display: block;
+                margin: 0 auto;
+                &.blank {
+                    border-color: rgba(0, 0, 0, 0.10);
+                    color: #4e4e62;
+                }
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

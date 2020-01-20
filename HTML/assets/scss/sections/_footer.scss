@@ -1,0 +1,42 @@
+/*----------------------
+Footer area
+----------------------*/
+
+.footer-area {
+    .footer-top {
+        background-color: #151525;
+        padding: 80px 0;
+        .social-share-icons {
+            ul {
+                li {
+                    display: inline-block;
+                    margin: 0 5px;
+                    a {
+                        display: inline-block;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        background-color: #202035;
+                        font-size: 16px;
+                        line-height: 60px;
+                        color: #b4b4c2;
+                        @include transition($transition);
+                        &:hover {
+                            background-color: $base-color;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 30px 0;
+        background-color: #111121;
+        .copyright-text {
+            color: #bfbfcd;
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
